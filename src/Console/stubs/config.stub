@@ -1,0 +1,20 @@
+<?php
+
+return [
+    'singular' => 'DummySingular',
+    'plural' => 'DummyPlural',
+    'identifier_path' => 'DummyIdentifierPath',
+    'route_type' => 'DummyRouteType',
+    'db' => [
+        'model' => 'DummyModel',
+        'id' => 'id',
+        'column' => 'id'
+    ],
+    'icon' => 'DummyIcon',
+    'controller' => 'DummyController',
+    'datatable' => [
+        "columns" => DummyDatatableColumns
+    ],
+    'sidebar' => [],
+    'permissions' => DummyPermissions
+];

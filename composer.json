@@ -1,0 +1,41 @@
+{
+    "name": "evergreen/generic",
+    "description": "Evergreen laravel package",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://satis.evergreencomputing.com"
+        }
+    ],
+    "require": {
+        "unisharp/laravel-ckeditor": "~4.6",
+        "doctrine/dbal": "~2.5",
+        "yajra/laravel-datatables-oracle": "~8.0",
+        "phpseclib/phpseclib": "~2.0",
+        "barryvdh/laravel-snappy": "^0.4",
+        "h4cc/wkhtmltoimage-amd64": "0.12.x",
+        "h4cc/wkhtmltopdf-amd64": "0.12.x",
+        "symfony/yaml": "^4.1"
+    },
+    "autoload": {
+        "files": [
+            "src/app/Helpers/blade.php",
+            "src/app/Helpers/EGPermission.php",
+            "src/app/Helpers/Toast.php"
+        ],
+        "psr-4": {
+            "Evergreen\\Generic\\": "src",
+            "phpseclib\\": "vendor/phpseclib"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Evergreen\\Generic\\EvergreenServiceProvider"
+            ]
+        }
+    }
+}

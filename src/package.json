@@ -1,0 +1,41 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+    "axios": "^0.15.3",
+    "bootstrap-sass": "^3.3.7",
+    "bulma": "^0.7.5",
+    "cross-env": "^3.2.3",
+    "jquery": "^3.2.1",
+    "laravel-mix": "0.*",
+    "lodash": "^4.17.4",
+    "vue": "^2.1.10"
+  },
+  "dependencies": {
+    "datatables-bulma": "^1.0.1",
+    "datatables.net": "^1.10.16",
+    "datatables.net-dt": "^1.10.16",
+    "datatables.net-buttons": "^1.5.1",
+    "datatables.net-buttons-dt": "^1.5.1",
+    "datatables.net-responsive": "^2.2.1",
+    "datatables.net-responsive-dt": "^2.2.1",
+    "flatpickr": "^4.5.1",
+    "js-cookie": "^2.1.4",
+    "jszip": "^3.1.5",
+    "moment": "^2.18.1",
+    "nanoscroller": "^0.8.7",
+    "pdfmake": "^0.1.36",
+    "selectize": "^0.12.4",
+    "toastr": "^2.1.2",
+    "svgxuse": "^1.2.4",
+    "numeral": "^2.0.6"
+  }
+}

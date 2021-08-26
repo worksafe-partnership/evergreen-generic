@@ -1,0 +1,25 @@
+<?php
+
+namespace App;
+
+use Yajra\DataTables\Datatables;
+use Illuminate\Database\Eloquent\Model;DummyUseSoftDeletes
+
+class DummyClass extends Model
+{DummySoftDeletes
+    protected $table = DummyDbTable;DummyPrimaryKey
+    
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = DummyFillables;
+
+    public static function scopeDatatableAll($query, $parent, $identifier)
+    {
+        $queryDummyWithTrashed->select(DummyDatatableSelect);
+
+        return Datatables::of($query)->make(true);
+    }
+}

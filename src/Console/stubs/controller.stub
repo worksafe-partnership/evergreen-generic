@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Controller;
+use App\DummyClass;
+use App\Http\Requests\DummyRequest;
+
+class DummyController extends Controller
+{
+    protected $identifierPath = 'DummyIdentifierPath';
+    
+    public function store(DummyRequest $request)
+    {
+        return parent::_store(func_get_args());
+    }
+
+    public function update(DummyRequest $request)
+    {
+        return parent::_update(func_get_args());
+    }DummyAutoCompleteFunctions
+}

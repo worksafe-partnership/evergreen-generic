@@ -1,0 +1,93 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "datatables-bulma",
+        "scope": null,
+        "escapedName": "datatables-bulma",
+        "name": "datatables-bulma",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/f03/dev/egl2-demo"
+    ]
+  ],
+  "_from": "datatables-bulma@latest",
+  "_id": "datatables-bulma@1.0.1",
+  "_inCache": true,
+  "_location": "/datatables-bulma",
+  "_nodeVersion": "7.5.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/datatables-bulma-1.0.1.tgz_1496053294382_0.9904851643368602"
+  },
+  "_npmUser": {
+    "name": "jdilleen",
+    "email": "j.dilleen@hotmail.com"
+  },
+  "_npmVersion": "4.1.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "datatables-bulma",
+    "scope": null,
+    "escapedName": "datatables-bulma",
+    "name": "datatables-bulma",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/datatables-bulma/-/datatables-bulma-1.0.1.tgz",
+  "_shasum": "6eb076337cde03eee1abb2c2eb2c88504ead5a71",
+  "_shrinkwrap": null,
+  "_spec": "datatables-bulma",
+  "_where": "/Users/f03/dev/egl2-demo",
+  "author": {
+    "name": "James Dilleen",
+    "email": "j.dilleen@hotmail.com",
+    "url": "https://jdilleen.me"
+  },
+  "bugs": {
+    "url": "https://github.com/JDilleen/datatables-bulma/issues"
+  },
+  "dependencies": {},
+  "description": "Bulma CSS framework style integration for the DataTables library",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "6eb076337cde03eee1abb2c2eb2c88504ead5a71",
+    "tarball": "https://registry.npmjs.org/datatables-bulma/-/datatables-bulma-1.0.1.tgz"
+  },
+  "gitHead": "0a9681c03818e4c6369a8d774b5fa0013b5818e2",
+  "homepage": "https://github.com/JDilleen/datatables-bulma#readme",
+  "keywords": [
+    "datatables",
+    "bulma",
+    "css",
+    "jquery",
+    "plugin"
+  ],
+  "license": "MIT",
+  "main": "js/dataTables.bulma.min.js",
+  "maintainers": [
+    {
+      "name": "jdilleen",
+      "email": "j.dilleen@hotmail.com"
+    }
+  ],
+  "name": "datatables-bulma",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JDilleen/datatables-bulma.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.1"
+}

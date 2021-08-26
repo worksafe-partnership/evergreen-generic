@@ -1,0 +1,17 @@
+identifierPath: test
+model: Test
+timestamps: true
+permissions: true
+config:
+    singular: Test
+    plural: Tests
+    icon: tick
+    route_type: resource
+
+fields:
+    - type: increments
+      name: id
+
+    - type: string
+      name: entity_type
+      label: type

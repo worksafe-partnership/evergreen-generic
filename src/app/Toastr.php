@@ -1,0 +1,76 @@
+<?php
+
+namespace Evergreen\Generic\App;
+
+use Session;
+
+class Toastr
+{
+    public function success($title = "", $message = "")
+    {
+        $this->store($title, $message, 'success');
+
+        return $this;
+    }
+
+    public function info($title = "", $message = "")
+    {
+        $this->store($title, $message, 'info');
+
+        return $this;
+    }
+
+    public function warning($title = "", $message = "")
+    {
+        $this->store($title, $message, 'warning');
+
+        return $this;
+    }
+
+    public function error($title = "", $message = "")
+    {
+        $this->store($title, $message, 'error');
+
+        return $this;
+    }
+
+    private function store($title, $message, $type)
+    {
+        $toast = collect([
+            'type' => $type,
+            'title' => $title,
+            'message' => $message
+        ]);
+
+        Session::put('toast', $toast);
+    }
+
+    public function timeout($t = 1000)
+    {
+        $toast = Session::get('toast');
+
+        if ($toast->has('options')) {
+            $toast['options']->put('timeOut', $t);
+        } else {
+            $toast->put('options', collect(['timeOut' => $t]));
+        }
+
+        return $this;
+    }
+
+    public function options(array $options)
+    {
+        $toast = Session::get('toast');
+
+        if (! $toast->has('options')) {
+            $toast->put('options', collect($options));
+        } else {
+            $current_options = $toast->get('options');
+            $all_options = $current_options->merge($options);
+
+            $toast->put('options', collect($all_options));
+        }
+
+        return $this;
+    }
+}
